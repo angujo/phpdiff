@@ -51,6 +51,11 @@ class PhpDiff
         return implode('', $opcodes);
     }
 
+    public static function renderHtml($from_text, $t_text, $granularityStack = null)
+    {
+        return (new self($from_text, $t_text, $granularityStack))->renderDiffToHTML();
+    }
+
     public function renderDiffToHTML()
     {
         $in_offset = 0;
