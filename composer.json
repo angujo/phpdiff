@@ -1,0 +1,19 @@
+{
+    "name": "angujo/phpdiff",
+    "description": "Compare two string and produce renderable difference",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "angujo",
+            "email": "angujomondi@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Angujo\\PhpDiff\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {}
+}
