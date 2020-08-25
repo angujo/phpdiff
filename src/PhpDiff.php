@@ -53,7 +53,7 @@ class PhpDiff
 
     public static function renderHtml($from_text, $t_text, $granularityStack = null)
     {
-        return (new self($from_text, $t_text, $granularityStack))->renderDiffToHTML();
+        return (new self($from_text, $t_text, $granularityStack ?: self::$characterGranularity))->renderDiffToHTML();
     }
 
     public function renderDiffToHTML()
